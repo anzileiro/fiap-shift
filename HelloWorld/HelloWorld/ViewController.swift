@@ -23,8 +23,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //Metodos para acionar os buttons.
 
-    @IBAction func sayHello(sender: UIButton) {
+    @IBAction func say(sender: UIButton) {
         
         helloLabel.text = "Hello World";
         
