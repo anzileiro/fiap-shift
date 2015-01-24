@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="i6r-ZH-jyE">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Detalhe Livro-->
+        <scene sceneID="BcZ-Gi-bdi">
+            <objects>
+                <viewController title="Detalhe Livro" modalTransitionStyle="crossDissolve" id="a8b-A2-lhQ" customClass="DetalheLivroViewController" customModule="Biblioteca" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4BA-zp-p2G"/>
+                        <viewControllerLayoutGuide type="bottom" id="xmc-FB-Kfh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5bb-eH-K5x">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQJ-ey-bRq">
+                                <rect key="frame" x="31" y="100" width="300" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJA-ze-cfc">
+                                <rect key="frame" x="16" y="28" width="66" height="30"/>
+                                <state key="normal" title=" Fechar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fechar" destination="a8b-A2-lhQ" eventType="touchUpInside" id="mss-SK-Tct"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ak3-jv-YM6">
+                                <rect key="frame" x="16" y="165" width="179" height="30"/>
+                                <state key="normal" title="Marcar como favorito">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="marcarFavorito" destination="a8b-A2-lhQ" eventType="touchUpInside" id="6vU-0M-rTK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="nomeLivroLabel" destination="uQJ-ey-bRq" id="Mnj-L9-hcm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BK5-fd-cdS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1174" y="712"/>
+        </scene>
+        <!--Estante de Livros-->
+        <scene sceneID="BmB-mx-hhz">
+            <objects>
+                <viewController title="Estante de Livros" id="zcK-CD-iie" customClass="LivrosViewController" customModule="Biblioteca" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MBN-hg-bxh"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Jc-1n-FzS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VxS-u9-zpH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="shelf" translatesAutoresizingMaskIntoConstraints="NO" id="de2-wd-VIv">
+                                <rect key="frame" x="-74" y="-146" width="674" height="754"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWw-cc-5D5">
+                                <rect key="frame" x="59" y="57" width="70" height="83"/>
+                                <state key="normal" backgroundImage="Livro1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="visualizarLivro:" destination="zcK-CD-iie" eventType="touchUpInside" id="RWC-YZ-8oe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NW2-nA-X9V">
+                                <rect key="frame" x="59" y="195" width="70" height="83"/>
+                                <state key="normal" backgroundImage="Livro2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="visualizarLivro:" destination="zcK-CD-iie" eventType="touchUpInside" id="eDY-hZ-bzA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6EO-OF-EvC">
+                                <rect key="frame" x="204" y="57" width="70" height="83"/>
+                                <state key="normal" backgroundImage="Livro3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="visualizarLivro:" destination="zcK-CD-iie" eventType="touchUpInside" id="bli-IA-E88"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Czu-4I-BGl">
+                                <rect key="frame" x="204" y="195" width="70" height="83"/>
+                                <state key="normal" backgroundImage="Livro4">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="visualizarLivro:" destination="zcK-CD-iie" eventType="touchUpInside" id="KOr-u7-6bx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFt-eY-VKL">
+                                <rect key="frame" x="11" y="18" width="334" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="highlightedColor" red="0.63159475374813423" green="0.96813841540404044" blue="0.89298561973433987" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="de2-wd-VIv" firstAttribute="top" secondItem="VxS-u9-zpH" secondAttribute="top" id="TTv-Y4-blI"/>
+                            <constraint firstAttribute="bottom" secondItem="de2-wd-VIv" secondAttribute="bottom" id="UbX-ye-XZD"/>
+                            <constraint firstItem="de2-wd-VIv" firstAttribute="leading" secondItem="VxS-u9-zpH" secondAttribute="leading" id="ZSU-u9-Ikm"/>
+                            <constraint firstAttribute="trailing" secondItem="de2-wd-VIv" secondAttribute="trailing" id="qW0-AF-VHv"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Livros" image="livros" id="zfS-eS-muO"/>
+                    <connections>
+                        <outlet property="livroFavoritoLabel" destination="XFt-eY-VKL" id="PhE-oe-ezF"/>
+                        <segue destination="a8b-A2-lhQ" kind="presentation" identifier="livroParaDetalheSegue" modalTransitionStyle="flipHorizontal" id="qdM-Kh-erS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dgb-Fq-mZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="392" y="727"/>
+        </scene>
+        <!--Livros-->
+        <scene sceneID="mc8-vc-kpd">
+            <objects>
+                <tabBarController title="Livros" automaticallyAdjustsScrollViewInsets="NO" id="i6r-ZH-jyE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="YuR-1l-ior">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="zcK-CD-iie" kind="relationship" relationship="viewControllers" id="M4B-9q-QkA"/>
+                        <segue destination="F4W-oh-8RY" kind="relationship" relationship="viewControllers" id="vIR-iU-yaD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cUD-Uj-eaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-525" y="1110"/>
+        </scene>
+        <!--Lista de Livros-->
+        <scene sceneID="Own-DE-FUu">
+            <objects>
+                <tableViewController title="Lista de Livros" id="U2L-cp-moY" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="olD-Qr-PyU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="kVf-vF-hCS">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kVf-vF-hCS" id="QR4-zU-ETh">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="U2L-cp-moY" id="L52-ak-fLV"/>
+                            <outlet property="delegate" destination="U2L-cp-moY" id="Jy7-pM-IwJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="8U9-fx-wIz"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ztZ-sT-3aM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1162" y="1502"/>
+        </scene>
+        <!--FIlmes-->
+        <scene sceneID="IwM-aK-uhd">
+            <objects>
+                <navigationController title="FIlmes" id="F4W-oh-8RY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Filmes" image="filmes" id="22O-7y-nll"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yu6-Ct-dR1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="U2L-cp-moY" kind="relationship" relationship="rootViewController" id="SOj-H4-Sut"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JBO-yM-3Q2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="1502"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Livro1" width="85" height="110"/>
+        <image name="Livro2" width="85" height="110"/>
+        <image name="Livro3" width="85" height="110"/>
+        <image name="Livro4" width="85" height="110"/>
+        <image name="filmes" width="32" height="32"/>
+        <image name="livros" width="32" height="32"/>
+        <image name="shelf" width="320" height="480"/>
+    </resources>
+</document>
