@@ -14,6 +14,8 @@
 		ACF1CA471A73FBE5009E2790 /* BibliotecaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF1CA461A73FBE5009E2790 /* BibliotecaTests.swift */; };
 		ACF1CA511A73FDCC009E2790 /* LivrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF1CA501A73FDCC009E2790 /* LivrosViewController.swift */; };
 		ACF1CA531A74072D009E2790 /* DetalheLivroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF1CA521A74072D009E2790 /* DetalheLivroViewController.swift */; };
+		ACF1CA551A742422009E2790 /* FilmesTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF1CA541A742422009E2790 /* FilmesTableTableViewController.swift */; };
+		ACF1CA571A742955009E2790 /* DetalheFilmeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF1CA561A742955009E2790 /* DetalheFilmeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		ACF1CA461A73FBE5009E2790 /* BibliotecaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecaTests.swift; sourceTree = "<group>"; };
 		ACF1CA501A73FDCC009E2790 /* LivrosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivrosViewController.swift; sourceTree = "<group>"; };
 		ACF1CA521A74072D009E2790 /* DetalheLivroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheLivroViewController.swift; sourceTree = "<group>"; };
+		ACF1CA541A742422009E2790 /* FilmesTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmesTableTableViewController.swift; sourceTree = "<group>"; };
+		ACF1CA561A742955009E2790 /* DetalheFilmeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheFilmeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +83,10 @@
 		ACF1CA2D1A73FBE5009E2790 /* Biblioteca */ = {
 			isa = PBXGroup;
 			children = (
+				ACF1CA591A742974009E2790 /* Filme */,
+				ACF1CA581A74295F009E2790 /* Livro */,
 				ACF1CA301A73FBE5009E2790 /* AppDelegate.swift */,
 				ACF1CA341A73FBE5009E2790 /* Main.storyboard */,
-				ACF1CA521A74072D009E2790 /* DetalheLivroViewController.swift */,
-				ACF1CA501A73FDCC009E2790 /* LivrosViewController.swift */,
 				ACF1CA371A73FBE5009E2790 /* Images.xcassets */,
 				ACF1CA391A73FBE5009E2790 /* LaunchScreen.xib */,
 				ACF1CA2E1A73FBE5009E2790 /* Supporting Files */,
@@ -113,6 +117,24 @@
 				ACF1CA451A73FBE5009E2790 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACF1CA581A74295F009E2790 /* Livro */ = {
+			isa = PBXGroup;
+			children = (
+				ACF1CA521A74072D009E2790 /* DetalheLivroViewController.swift */,
+				ACF1CA501A73FDCC009E2790 /* LivrosViewController.swift */,
+			);
+			name = Livro;
+			sourceTree = "<group>";
+		};
+		ACF1CA591A742974009E2790 /* Filme */ = {
+			isa = PBXGroup;
+			children = (
+				ACF1CA561A742955009E2790 /* DetalheFilmeViewController.swift */,
+				ACF1CA541A742422009E2790 /* FilmesTableTableViewController.swift */,
+			);
+			name = Filme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +239,8 @@
 			files = (
 				ACF1CA531A74072D009E2790 /* DetalheLivroViewController.swift in Sources */,
 				ACF1CA311A73FBE5009E2790 /* AppDelegate.swift in Sources */,
+				ACF1CA571A742955009E2790 /* DetalheFilmeViewController.swift in Sources */,
+				ACF1CA551A742422009E2790 /* FilmesTableTableViewController.swift in Sources */,
 				ACF1CA511A73FDCC009E2790 /* LivrosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
